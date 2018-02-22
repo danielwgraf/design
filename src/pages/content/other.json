@@ -2,18 +2,61 @@
   "other": [
     {
       "key": "o0",
+      "primary": true,
+      "title": "Teaching Assistant",
+      "location": "App Design and Development",
+      "date": "Spring 17",
+      "responsibilities": [
+        {
+          "key": "o0_0",
+          "content": "- Worked as a TA for the sophomore Information Systems course",
+          "className": ""
+        },
+        {
+          "key": "o0_1",
+          "content": "- Graded exams and projects, while also running weekly labs to help up",
+          "className": ""
+        },
+        {
+          "key": "o0_2",
+          "content": "to 20 sophomores improve their web application development skills",
+          "className": "indent"
+        }
+      ],
+      "fullContent":{
+        "fullTitle": "Teaching Assistant",
+        "content": {
+          "client": "Carnegie Mellon University",
+          "location": "Pittsburgh, PA",
+          "link": "http://67272.cmuis.net/",
+          "text": "As an Information Systems major, we are required to take 67-272: App Design and Development our sophomore year.  It is a course that is focused on teaching IS students how to build web applications and it is first programming heavy course specifically for IS majors.\n\nBefore this course, I had my doubts about majoring in Information Systems. All of the computer science courses that I was taking had us building more and just doing things that I considered to be a lot more fun. But when I finally took this course with Prof. Heimann, I knew that this was the major for me. That’s why I was extremely excited when I was offered the chance to be a Teaching Assistant for this course.\n\nBeing a TA involved three main responsibilities: grading exams and projects, running labs, and proctoring exams. \n\nBefore I actually started working, I felt as if I didn’t know enough to actually teach these students. But after the first lab started, I realized that I knew way more than I thought I did about programming and helping students debug and understand their code. This is why the experience of being a TA was a major step for me in being a software developer.",
+          "categories": [
+            "desktop"
+          ],
+          "pictures": [
+            {
+              "title": "Landing Page",
+              "category": "desktop",
+              "src": "./images/work/272ta/ta-page.png"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "o1",
       "primary": false,
       "title": "Study Abroad",
       "location": "TU Dresden",
       "date": "Spring 16",
       "responsibilities": [
         {
-          "key": "o0_0",
+          "key": "o1_0",
           "content": "- Attended the Technische Universität Dresden",
           "className": ""
         },
         {
-          "key": "o0_1",
+          "key": "o1_1",
           "content": "- Developed use of German in a classroom/group setting",
           "className": ""
         }
@@ -49,14 +92,14 @@
       }
     },
     {
-      "key": "o1",
-      "primary": true,
+      "key": "o2",
+      "primary": false,
       "title": "Technical Assistant",
       "location": "Center for Pain Control",
       "date": "Jan – Feb 16",
       "responsibilities": [
         {
-          "key": "o1_0",
+          "key": "o2_0",
           "content": "- Deployed new computers to the network after a ransomware attack",
           "className": ""
         }
@@ -102,19 +145,72 @@
       }
     },
     {
-      "key": "o2",
+      "key": "o3",
+      "primary": false,
+      "title": "Camp Counselor",
+      "location": "Bear Creek Camp",
+      "date": "Summers 14-16",
+      "responsibilities": [
+        {
+          "key": "o3_0",
+          "content": "- Managed groups of 10-20 children weekly at a stay-away camp",
+          "className": ""
+        },
+        {
+          "key": "o3_1",
+          "content": "- Cultivated campers’ growth and teamwork skills through group building",
+          "className": ""
+        },
+        {
+          "key": "o3_2",
+          "content": "activities, while teaching them about nature through hikes and games",
+          "className": "indent"
+        }
+      ],
+      "fullContent":{
+        "fullTitle": "Camp Counselor",
+        "content": {
+          "client": "Bear Creek Camp",
+          "location": "Bear Creek, PA",
+          "link": "http://bearcreekcamp.org/",
+          "text": "When I was 9 years old, I went to a sleep-away camp called Bear Creek Camp, and I have three distinct memories: I had a tick embedded in my head, I ended up getting lice, and I made a girl cry at the dance because I was too scared to dance with her. It’s safe to say that I didn’t go back.\n\nFast forwarding about a decade, my mom brings BCC up again because a new person is running the camp: a guy that my parents had met in Germany while he was touring with a band called Captive Free. The spring semester was coming to a close, and I needed a summer job, so I decided to apply and pretty soon I was hired.\n\nI worked as a camp counselor for 2 full summers (2014 and 2015). The responsibilities included being responsible for a different group of children every week between the ages of 8 and 18 for 8 weeks. This would also involve taking those children out into the woods at least once every week.\n\nIn 2016, I worked for the summer's two busiest weeks, immediately following studying abroad in Dresden.\nIn 2017, I worked for the summer's final week, immediately following working in Palau.\n\nMany interviewers ask me why I would choose to work at a summer camp over a summer internship, but I would easily make the same choice again. I learned a lot while working at BCC. It’s actually surprising that there is so much overlap between being a counselor and a project manager. You’re constantly on a schedule, while constantly handling twenty odd things coming at you at any given time. I really believe that if you can take twenty 10 year olds out into the woods and not only have them survive, but also have fun, then you can manage any project.",
+          "categories": [
+            "pictures"
+          ],
+          "pictures": [
+            {
+              "title": "Webpage",
+              "category": "pictures",
+              "src": "./images/work/bcc/website.png"
+            },
+            {
+              "title": "Coworkers",
+              "category": "pictures",
+              "src": "./images/work/bcc/sylvia.png"
+            },
+            {
+              "title": "Brave Little Toaster",
+              "category": "pictures",
+              "src": "./images/work/bcc/toaster.png"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "o4",
       "primary": true,
       "title": "Mission Trips",
       "location": "Guatemala",
       "date": "Summers 2007-2009",
       "responsibilities": [
         {
-          "key": "o2_0",
+          "key": "o4_0",
           "content": "- Provided medical aid, vacation bible school, and construction crews to",
           "className": ""
         },
         {
-          "key": "o2_1",
+          "key": "o4_1",
           "content": "local families, schools, and orphanages",
           "className": "indent"
         }

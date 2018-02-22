@@ -13,8 +13,7 @@ import Loading from "../components/loading"
 import Header from "../components/header"
 
 // JSON Data
-import workData from './content/work.json';
-import projectData from './content/projects.json';
+import designData from './content/design.json';
 import otherData from './content/other.json';
 import homeData from './content/home.json';
 
@@ -141,7 +140,7 @@ class Resume extends Component {
               <span>
                 <a className='link' href="mailto:danielgraf.developer@gmail.com">danielgraf.developer@gmail.com</a>
                 <br/>
-                <a className='link' href="http://www.danielwgraf.com">www.danielwgraf.com</a>
+                <a className='link' href="http://www.danielwgraf.com/design">www.danielwgraf.com/design</a>
                 <br />
                 (610) 763-1629
               </span>
@@ -171,12 +170,21 @@ class Resume extends Component {
               </p>
             </Section>
 
+            <h2>Design</h2>
+            <Section>
+              <p>
+                UI/UX | Frontend Design <br/>
+                Material Design | User Testing <br/>
+                Black & White Photography
+              </p>
+            </Section>
+
             <h2>Technical</h2>
             <Section>
               <p>
-                UI/UX | Mobile Development <br/>
-                Code Design | Frontend Design <br/>
-                Backend Development
+                Backend Development <br/>
+                Code Design | Test Driven Dev. <br/>
+                Mobile Development
               </p>
             </Section>
 
@@ -208,62 +216,27 @@ class Resume extends Component {
 
           </LeftColumn>
           <RightColumn>
-            <h2>Work Experience</h2>
+            <h2>UI/UX Development Experience</h2>
             <Section>
               {
                 // Loops through the work experiences and creates interactive
                 // Sections to click on and open a modal
-                workData.work.map((job) =>
+                designData.design.map((role) =>
                 {
-                  if (job.primary)
+                  if (role.primary)
                     return (
                       <Interact
-                        key={job.key}
-                        title={job.fullContent.fullTitle}
-                        content={job.fullContent.content}
+                        key={role.key}
+                        title={role.fullContent.fullTitle}
+                        content={role.fullContent.content}
                         innerOpenModal={this.handleOpenModal}
                         >
                         <h4>
-                          <span>{job.position} </span>
-                           • {job.location} • {job.date}</h4>
+                          <span>{role.position} </span>
+                           • {role.location} • {role.date}</h4>
                         <ul className='dashed'>
                           {
-                            job.responsibilities.map((responsibility) =>
-                              <li
-                                key={responsibility.key}
-                                className={responsibility.className}
-                                >
-                                {responsibility.content}
-                              </li>
-                            )
-                          }
-                        </ul>
-                      </Interact>
-                    )
-                  }
-                )
-               }
-            </Section>
-
-            <h2>Project Experience</h2>
-            <Section>
-              {
-                // Loops through the project experiences and creates interactive
-                // Sections to click on and open a modal
-                projectData.projects.map((project) =>
-                {
-                  if (project.primary)
-                    return (
-                      <Interact
-                        key={project.key}
-                        title={project.fullContent.fullTitle}
-                        content={project.fullContent.content}
-                        innerOpenModal={this.handleOpenModal}
-                        >
-                        <h4><span>{project.title}</span> • {project.date}</h4>
-                        <ul className='dashed'>
-                          {
-                            project.responsibilities.map((responsibility) =>
+                            role.responsibilities.map((responsibility) =>
                               <li
                                 key={responsibility.key}
                                 className={responsibility.className}
@@ -410,12 +383,12 @@ class Resume extends Component {
                     }
                   }
                   nestedItems={
-                    // Loops through the jobs
-                    workData.work.map((job, i) =>
+                    // Loops through the roles
+                    designData.design.map((role, i) =>
                       <MenuItem
-                        key={'workList'+i}
+                        key={'roleList'+i}
                         insetChildren={true}
-                        onClick={() => this.switchModalFromMenu(job.fullContent.fullTitle, job.fullContent.content)}
+                        onClick={() => this.switchModalFromMenu(role.fullContent.fullTitle, role.fullContent.content)}
                         innerDivStyle= {
                           {
                             color: 'rgb(82, 86, 89)',
@@ -425,55 +398,17 @@ class Resume extends Component {
                           }
                         }
                       >
-                        {job.position}
+                        {role.position}
                       </MenuItem>
                     )
                   }
-                  >Work Experience</MenuItem>
+                  >UI/UX Development Experience</MenuItem>
                 <Divider
                   style={
                     {
                       marginTop: '0px'
                     }
                   }
-                />
-                <MenuItem
-                  key='projectList'
-                  rightIcon={<ArrowDropDown />}
-                  primaryTogglesNestedList={true}
-                  style={
-                    {
-                      color: '#008AFF',
-                      backgroundColor: 'white'
-                    }
-                  }
-                  nestedItems={
-                    // Loops through the projects
-                    projectData.projects.map((project, i) =>
-                      <MenuItem
-                        key={'projectList'+i}
-                        insetChildren={true}
-                        onClick={() => this.switchModalFromMenu(project.fullContent.fullTitle, project.fullContent.content)}
-                        innerDivStyle= {
-                          {
-                            color: 'rgb(82, 86, 89)',
-                            textOverflow: 'ellipsis',
-                            whiteSpace: 'nowrap',
-                            overflow: 'hidden'
-                          }
-                        }
-                      >
-                        {project.title}
-                      </MenuItem>
-                    )
-                  }
-                >Project Experience</MenuItem>
-                <Divider
-                  style={
-                  {
-                    marginTop: '0px'
-                  }
-                }
                 />
                 <MenuItem
                   key='otherList'
