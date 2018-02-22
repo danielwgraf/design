@@ -1,0 +1,36 @@
+{
+  "name": "daniel-graf-resume",
+  "description": "Daniel Graf Resume 2017",
+  "version": "1.0.0",
+  "author": "Daniel Graf <danielgraf.developer@gmail.com>",
+  "dependencies": {
+    "gatsby": "^1.9.73",
+    "gatsby-link": "^1.6.22",
+    "gatsby-plugin-react-helmet": "^1.0.8",
+    "gatsby-plugin-sass": "^1.0.12",
+    "gatsby-plugin-typography": "^1.7.10",
+    "material-ui": "^0.19.4",
+    "react-modal": "^3.1.0",
+    "react-responsive": "^4.0.3",
+    "react-simpletabs": "^0.7.0",
+    "typography-theme-doelger": "^0.15.11"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public --branch gh-pages",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "file-loader": "^1.1.5",
+    "gh-pages": "^1.0.0",
+    "prettier": "^1.7.4",
+    "url-loader": "^0.6.2"
+  }
+}
